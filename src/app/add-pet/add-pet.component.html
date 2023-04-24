@@ -1,0 +1,36 @@
+<p>Here is a number that has been string interpolated {{numberVariable}}</p>
+<div>
+    <p>
+        Here is a function that has been string interpolated {{sendNumber()}}
+    </p>
+</div>
+<div>
+    <button [disabled]="disableProperty">Here's a button</button>
+</div>
+<div>
+    <label>Here is an input: </label>
+    <input [type]="typeProperty">
+</div>
+<div>
+    <p [hidden]="hiddenProperty">This paragraph was hidden</p>
+</div>
+<table>
+    <tr>
+        <td style="background-color: yellow;">
+            Row 1, Column 1
+        </td>
+        <td style="background-color: green;">
+            Row 1, Column 2
+        </td>
+    </tr>
+    <tr>
+        <td style="background-color: cyan;" [colSpan]="colSpanProperty">
+            Row 2
+        </td>
+    </tr>
+</table>
+<div class="row">
+    <div class="col-6">
+        <img id="imageSize" [src]="srcProperty">
+    </div>
+</div>
